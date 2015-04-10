@@ -1,0 +1,17 @@
+Why are you use 'magic' numbers. For example, you wrote
+
+if (length <= 0) {
+		length = 16;
+	}
+	
+	in arraylist.c . (And in other files!)
+	
+	Why are you not use 
+	
+	#define ARRAY_LIST_LENGTH_BLOCK 16 
+	
+	or 
+	
+	const unsigned arraylist_length_block = 16; 
+	
+	?
